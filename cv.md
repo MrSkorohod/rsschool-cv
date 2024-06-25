@@ -7,9 +7,9 @@
 
 ### Контакты: 
 * Мобильный телефон: +375291211258
-* GitHub: github.com/MrSkorohod 
+* GitHub: [github link](github.com/MrSkorohod) 
 * Почта: mr.vl.skorohod@gmail.com
-* Linkedin: linkedin.com/in/vladimir-skorohod-90977b202
+* Linkedin: [linkedin link](linkedin.com/in/vladimir-skorohod-90977b202)
 
 ********* 
 
