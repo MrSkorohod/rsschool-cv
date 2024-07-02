@@ -1,3 +1,199 @@
 body {
-  background-color: #e3f4f2;
+  max-width: 740px;
+  margin: 48px auto;
+
+  font-family: "Nunito Sans", sans-serif;
+
+  background-color: #fcfcfc;
+}
+
+h1,
+h2, 
+a {
+  color: rgb(74, 69, 75);
+}
+
+h2 {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 20px;
+}
+
+strong {
+  color: rgb(70, 74, 78);
+}
+
+.main-header {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.main-header-content {
+  width: 100%;
+  margin-left: 128px;
+}
+
+.main-header-title {
+  margin-bottom: 0;
+
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 60px;
+}
+
+.main-header-subtitle {
+  margin-top: 0;
+  padding-bottom: 24px;
+
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+
+  color: rgb(115, 115, 115);
+  border-bottom: 2px solid rgb(70, 74, 78);
+}
+
+.main-header img{
+  max-width: 200px;
+
+  border-radius: 50%;
+}
+
+.cv-body {
+  display: flex;
+  column-gap: 84px;
+}
+
+.cv-aside {
+  width: 42%;
+}
+
+.cv-article {
+  width: 70%
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 24px;
+}
+
+.contacts a {
+  display: inline-flex;
+  max-width: 78px;
+
+  text-decoration: none;
+}
+
+.contacts img {
+  max-width: 14px;
+  padding-right: 12px;
+}
+
+.education-title {
+  display: block;
+  padding-bottom: 8px;
+}
+
+.education-name {
+  font-weight: 600;
+  font-size: 16px;
+
+  color: rgb(70, 74, 78);
+}
+
+.education-time {
+  display: block;
+  
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: rgb(70, 74, 78);
+}
+
+.skill-item,
+.language-item {
+  margin-bottom: 10px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: rgb(70, 74, 78);
+}
+
+.about-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  text-align: justify;
+  color: rgb(115, 115, 115);
+}
+
+.work-experience {
+  position: relative;
+}
+
+.work-experience-list {
+  margin-left: 20px;
+
+  list-style-type: disc;
+  color: rgb(70, 74, 78);
+}
+
+.work-experience-list::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  top: 55px;
+  bottom: 0;
+  left: 6px;
+  background-color: rgb(70, 74, 78);
+}
+
+.work-experience-time,
+.work-experience-company {
+  display: block;
+
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  line-height: 23px;
+
+  color: rgb(115, 115, 115)
+}
+
+.work-experience-title {
+  margin: 5px 0px;
+}
+
+.work-experience-text {
+  margin: 0px;
+
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.24px;
+  line-height: 18px;
+
+  text-align: justify;
+  color: rgb(115, 115, 115);
+}
+
+.code-example code {
+  white-space: pre-line;
 }

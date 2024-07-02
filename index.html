@@ -5,94 +5,142 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personal CV</title>
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Vladimir Skorohod</h1>
-    <p>Frontend Angular Developer</p>
-    <img src="" alt="CV avatar">
-
+  <header class="main-header">
+    <div class="main-header-content">
+      <h1 class="main-header-title">Vladimir Skorohod</h1>
+      <p class="main-header-subtitle">Frontend Angular Developer</p>
+    </div>
+    <img src="images/content/avatar.jpg" alt="CV avatar">
   </header>
-  <section>
-    <header>
-      <h2>About me</h2>
-    </header>
-    <p>Hello, my name is Vladimir Skorohod. I am a front-end developer. I primarily focus on writing clean, elegant,
-      and efficient code. I am proficient in HTML, CSS, JavaScript. I also review existing code and can consult with
-      you on how to improve it. Over the past 3 years, I have primarily worked for companies that specialize in
-      enterprise web applications.</p>
-  </section>
-  <section>
-    <header>
-      <h2>Work Experience</h2>
-    </header>
-    <article>
-      <span>September 2021 - Present</span>
-      <span>HiQo Solutions</span>
-      <h3>Angular Frontend developer</h3>
-      <p>During this period of time, I had experience working on a project with Angular 14, as well as migrating the application to Version 15.</p>
+  <main class="cv-body">
+    <aside class="cv-aside">
+      <section class="contacts">
+        <a href="tel:+375291211258">
+          <img src="images/favicons/call.svg" alt="Phone image">
+          +375291211258
+        </a>
+        <a href="mailto:mr.vl.skorohod@gmail.com" target="_blank">
+          <img src="images/favicons/mail.svg" alt="Mail image">
+          mr.vl.skorohod@gmail.com
+        </a>
+        <a href="https://github.com/MrSkorohod" target="_blank">
+          <img src="images/favicons/github.svg" alt="Mail image">
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/vladimir-skorohod-90977b202/" target="_blank">
+          <img src="images/favicons/linkedin.svg" alt="Mail image">
+          Linkedin
+        </a>
+      </section>
+      <section class="education">
+        <header>
+          <h2>Education</h2>
+        </header>
+        <ul>
+          <li>
+            <strong class="education-title">Belarusian State University of Informatics and Radioelectronics</strong>
+            <span class="education-name">Engineer of radio informatics</span>
+            <span class="education-time">2012-2017</span>
+          </li>
+          <li>
+            <strong class="education-title">IT academy</strong>
+            <span class="education-name">Development of web applications in JS</span>
+            <span class="education-time">2020 - 2021</span>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <header>
+          <h2>Skills</h2>
+        </header>
+        <ul>
+          <li class="skill-item">HTML, CSS(SCSS), Bootstrap, JavaScript</li>
+          <li class="skill-item">Angular, Angular Material</li>
+          <li class="skill-item">RxJs, NgRx</li>
+          <li class="skill-item">React, Redux tool kit</li>
+        </ul>
+      </section>
+      <section>
+        <header>
+          <h2>Language</h2>
+        </header>
+        <ul>
+          <li class="language-item">English &mdash; Pre-intermediate</li>
+          <li class="language-item">Russian &mdash; Native</li>
+        </ul>
+      </section>
+    </aside>
+    <article class="cv-article">
+      <section>
+        <header>
+          <h2>About me</h2>
+        </header>
+        <p class="about-text">Hello, my name is Vladimir Skorohod. I am a front-end developer. I primarily focus on writing clean, elegant,
+          and efficient code. I am proficient in HTML, CSS, JavaScript. I also review existing code and can consult with
+          you on how to improve it. Over the past 3 years, I have primarily worked for companies that specialize in
+          enterprise web applications.</p>
+      </section>
+      <section class="work-experience">
+        <header>
+          <h2>Work Experience</h2>
+        </header>
+
+        <ul class="work-experience-list">
+          <li>
+            <span class="work-experience-time">September 2021 - Present</span>
+            <span class="work-experience-company">HiQo Solutions</span>
+            <h3 class="work-experience-title">Angular Frontend developer</h3>
+            <p class="work-experience-text">During this period of time, I had experience working on a project with Angular 14, as well as migrating the application to Version 15.</p>
+          </li>
+          <li>
+            <span class="work-experience-time">July 2021 - September 2021</span>
+            <span class="work-experience-company">HiQo Solutions</span>
+            <h3 class="work-experience-title">Trainee Frontend developer</h3>
+            <p class="work-experience-text">Developed web application using Angular and Material UI library. Included in project Firebase.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="code-example">
+        <header>
+          <h2>Code Example</h2>
+        </header>
+          <pre>
+            <code>
+              const arrow = document.querySelector('.arrow');
+              const speed = document.querySelector('.speed-value');
+
+              navigator.geolocation.watchPosition((data) =&gt; {
+                console.log(data);
+                speed.textContent = data.coords.speed;
+                arrow.style.transform = `rotate(${data.coords.heading}deg)`;
+              }, (err) =&gt; {
+                console.error(err);
+              });
+            </code>
+          </pre>
+      </section>
+      <section>
+        <header>
+          <h2>Pet projects</h2>
+        </header>
+        <ul>
+          <li>
+            <a href="https://github.com/MrSkorohod/Financial-app">Financial App</a>
+          </li>
+          <li>
+            <a href="https://github.com/MrSkorohod/Tic-Tac-Toe">Tic-Tac-Toe</a>
+          </li>
+          <li>
+            <a href="https://github.com/MrSkorohod/weather_app">Weather App</a>
+          </li>
+        </ul>
+      </section>
     </article>
-    <article>
-      <span>July 2021 - September 2021</span>
-      <span>HiQo Solutions</span>
-      <h3>Trainee Frontend developer</h3>
-      <p>Developed web application using Angular and Material UI library. Included in project Firebase.</p>
-    </article>
-  </section>
-  <aside>
-    <section>
-      <a href="tel:+375291211258">
-        <img src="images/favicons/call.svg" alt="Phone image">
-        +375291211258
-      </a>
-      <a href="mailto:mr.vl.skorohod@gmail.com" target="_blank">
-        <img src="images/favicons/mail.svg" alt="Mail image">
-        mr.vl.skorohod@gmail.com
-      </a>
-      <a href="https://github.com/MrSkorohod" target="_blank">
-        <img src="images/favicons/github.svg" alt="Mail image">
-        GitHub
-      </a>
-      <a href="https://www.linkedin.com/in/vladimir-skorohod-90977b202/" target="_blank">
-        <img src="images/favicons/linkedin.svg" alt="Mail image">
-        Linkedin
-      </a>
-    </section>
-    <section>
-      <header>
-        <h2>Education</h2>
-      </header>
-      <div>
-        <strong>Belarusian State University of Informatics and Radioelectronics</strong>
-        <span>Engineer of radio informatics</span>
-        <span>2012-2017</span>
-      </div>
-      <div>
-        <strong>IT academy</strong>
-        <span>Development of web applications in JS</span>
-        <span>2020 - 2021</span>
-      </div>
-    </section>
-    <section>
-      <header>
-        <h2>Skills</h2>
-      </header>
-      <ul>
-        <li>HTML, CSS(SCSS), Bootstrap, JavaScript</li>
-        <li>Angular, Angular Material</li>
-        <li>RxJs, NgRx</li>
-        <li>React, Redux tool kit</li>
-      </ul>
-    </section>
-    <section>
-      <header>
-        <h2>Language</h2>
-      </header>
-      <ul>
-        <li>English &mdash; Pre-intermediate</li>
-        <li>Russian &mdash; Native</li>
-      </ul>
-    </section>
-  </aside>
+  </main>
 </body>
 </html>
