@@ -1,0 +1,35 @@
+body {
+  max-width: 740px;
+  margin: 48px auto;
+
+  font-family: "Nunito Sans", sans-serif;
+
+  background-color: #fcfcfc;
+}
+
+h1,
+h2, 
+a {
+  color: rgb(74, 69, 75);
+}
+
+h2 {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 20px;
+}
+
+strong {
+  color: rgb(70, 74, 78);
+}
